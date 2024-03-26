@@ -1,3 +1,9 @@
-{
-  "extends": "astro/tsconfigs/base"
+{     
+   "extends": "astro/tsconfigs/base",
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "moduleResolution": "node", 
+      "module": "ESNext"
+    }
+    
 }

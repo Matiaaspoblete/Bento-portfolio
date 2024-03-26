@@ -1,61 +1,158 @@
 ---
-interface Props {
-	title: string;
-	body: string;
-	href: string;
-}
-
-const { href, title, body } = Astro.props;
+import "./style.css";
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
-<style>
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 1px;
-		background-color: #23262d;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 7px;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-	}
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: calc(1.5rem - 1px);
-		border-radius: 8px;
-		color: white;
-		background-color: #23262d;
-		opacity: 0.8;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent-light));
-	}
-</style>
+<div class="h-screen w-9/12 mx-auto">
+  <div
+    class="pt-4 pb-4 justify-center h-full grid grid-cols-1 lg:grid-cols-4 gap-3 rounded"
+  >
+    <!-- CARD 1 START -->
+    <div class="card-1 card sm:row-span-4 lg:row-span-2 lg:col-span-1">
+      <div class="gradient-circle-1"></div>
+      <h1 class="text-white text-regular text-s">Welcome!</h1>
+      <div class="sm:flex sm:flex-col sm:items-start">
+        <h2 class="text-white text-l font-medium sm:items-start">
+          Hey there, I'm <a class="underline decoration-purple-900"
+            >Matias Poblete</a
+          >, a Front-End developer passionate about crafting engaging user
+          experiences. interfaces.
+        </h2>
+        <br />
+        <img
+          src="/img/avatar.png"
+          class="h-36 lg:h-3/5 ml-auto absolute bottom-0 left-0 right-0 sm:ml-auto"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- CARD 1 END -->
+
+    <!-- CARD 2 START -->
+
+    <div class="card card-2 lg:col-span-2">
+      <div class="flex flex-col items-center">
+        <div class="gradient-circle"></div>
+        <div class="h-full text-white text-l flex flex-col">
+          <h1>Skills</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 END -->
+
+    <!-- CARD 3 START -->
+
+    <div
+      class="card sm:col-span-2 lg:col-span-1 flex flex-col justify-center items-center"
+    >
+      <h1 class="text-gradient">Timezone</h1>
+      <h1 class="text-5xl text-gradient" id="bucharest-time">Loading..</h1>
+    </div>
+
+    <!-- CARD 3 END -->
+
+    <!-- CARD 4 START -->
+
+    <div
+      class="card sm:col-span-2 lg:col-span-1 flex flex-col justify-center items-center"
+    >
+      <h1 class="ml-2 text-xl text-gradient">Social Media</h1>
+      <!-- Social Media -->
+      <div class="ml-2 flex">
+        <a
+          href="https://www.linkedin.com/in/matias-poblete-7607351b8/"
+          target="_blank"
+          ><img
+            src="/img/linkedin.svg"
+            class="h-12 w-12 ml-3 cursor-pointer"
+            alt=""
+          />
+        </a>
+        <a href="https://github.com/Matiaaspoblete" target="_blank"
+          ><img
+            src="/img/github.svg"
+            class="h-12 w-12 ml-3 cursor-pointer"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 4 END -->
+
+    <!-- CARD 5 START -->
+
+    <div
+      class="card video sm:col-span-2 lg:col-span-2 flex flex-col items-center justify-center"
+    >
+      <video src="/video/chess.mp4" autoplay muted loop id="bishop"></video>
+      <h1
+        class="text-2xl font-regular bg-gradient-to-r from-purple-600 via-fuchsia-500 to-fuchsia-400 bg-clip-text text-transparent"
+      >
+        Tech Enthusiast and Chess Fan
+      </h1>
+    </div>
+
+    <!-- CARD 5 END -->
+
+    <!-- CARD 6 START -->
+
+    <div
+      class="card sm:col-span-2 lg:col-span-1 flex justify-center items-center"
+    >
+      <h2
+        class="ml-2 text-2xl font-medium bg-gradient-to-r from-fuchsia-400 via-fuchsia-400 to-purple-400 bg-clip-text text-transparent"
+      >
+        Download
+      </h2>
+      <h1
+        class="ml-2 text-5xl bg-gradient-to-r from-fuchsia-400 via-fuchsia-400 to-purple-400 bg-clip-text text-transparent"
+      >
+        CV
+      </h1>
+      <a href="/img/cv.pdf" download>
+        <img src="/img/download.svg" class="h-10 w-10 ml-3 cursor-pointer" /></a
+      >
+    </div>
+
+    <!-- CARD 6 END -->
+
+    <!-- CARD 7 START -->
+
+    <div class="card sm:col-span-2 lg:col-span-3 overflow-hidden">
+      <div class="h-full flex flex-col items-center justify-center">
+        <img src="/img/bg.webp" id="bg-project" alt="" />
+        <h1 class="text-4xl bg-gradient-to-r mb-4 text-gradient">
+          Check my projects
+        </h1>
+        <img
+          src="/img/arrow.svg"
+          class="arrow h-8 animate-bounce cursor-pointer"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <!-- CARD 7 END -->
+
+  <script>
+    import moment from "moment-timezone";
+
+    // Function to update the element with the current time in Bucharest
+    console.log(moment);
+    function updateTime() {
+      // Get the current date and time for Bucharest time zone
+      let timeZone = "Europe/Bucharest";
+      let currentDateTime = moment.tz(timeZone).format("HH:mm:ss");
+
+      // Update the element with the current time
+      document.getElementById("bucharest-time").textContent = currentDateTime;
+    }
+
+    // Call updateTime function initially to display the time immediately
+    updateTime();
+
+    // Update the time every second
+    setInterval(updateTime, 1000);
+  </script>
+</div>

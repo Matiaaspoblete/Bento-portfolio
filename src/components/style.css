@@ -1,0 +1,110 @@
+
+.card {
+    border-radius: 1rem;
+    background-color: #010101;
+    padding: 0.5rem;
+    filter: brightness(0.8);
+    backdrop-filter: blur(64px);
+  }
+
+  .card-1 {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .video {
+    overflow: hidden;
+  }
+
+  #bishop {
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+  #background {
+    opacity: 0.5;
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+  .card-2 {
+    overflow: hidden;
+    padding: 1rem;
+
+  }
+
+  .gradient-circle-1 {
+    position: absolute;
+    height: 70%;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%; /* Make it large enough to cover the card */
+    padding-bottom: 60%; /* Maintains aspect ratio for a perfect circle */
+    background: radial-gradient(
+      circle,
+      #cc1059,
+      #e414a2,
+      #7a1681,
+      #b810b4
+    ); /* Adjust colors as needed */
+    border-radius: 50%;
+    z-index: -1; /* Ensure it's behind the card content */
+    filter: blur(30px); /* Apply blur effect */
+    box-shadow: #b810b4, #7a1681, #b412b5;
+  }
+
+  .gradient-circle {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Make it large enough to cover the card */
+    padding-top: 60%; /* Maintains aspect ratio for a perfect circle */
+    background: radial-gradient(
+      circle,
+      #cc1059,
+      #e414a2,
+      #7a1681,
+      #b810b4
+    ); /* Adjust colors as needed */
+    border-radius: 50%;
+    z-index: -1; /* Ensure it's behind the card content */
+    filter: blur(30px); /* Apply blur effect */
+    box-shadow: #b810b4, #7a1681, #b412b5;
+  }
+
+  .arrow {
+    box-shadow: 0px 4px 8px #b810b4, 
+    0px 4px 8px #7a1681, 
+    0px 4px 8px #b412b5;
+    border-radius: 50%;
+  }
+
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-fuchsia-400 via-fuchsia-800 to-purple-900 bg-clip-text text-transparent;
+  }
+
+  #bg-project {
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+
+  /* Responsive */
