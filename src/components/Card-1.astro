@@ -4,120 +4,25 @@ import "./style.css";
 
 <div class="h-screen w-9/12 mx-auto">
   <h1 class="text-white text-2xl text-center">Projects</h1>
-  <div class="pt-4 pb-4 justify-center grid h-full grid-cols-4 gap-3 rounded">
+  <div
+    class="pt-4 pb-4 justify-center grid h-full md:grid-cols-1 lg:grid-cols-2 gap-3 rounded"
+  >
     <!-- CARD 1 START -->
-    <div class="card-1 card col-span-2">
-      <div class="gradient-circle-1"></div>
-      <h1 class="text-white text-regular text-s">Welcome!</h1>
-      <h2 class="text-white text-l font-medium">
-        Hey there, I'm <a class="underline decoration-purple-900"
-          >Matias Poblete</a
-        >, a Front-End developer passionate about crafting engaging user
-        experiences. interfaces.
-      </h2>
-      <br />
+    <div class="card-1 card md:col-span-1 lg:col-span-2">
+      <h1 class="text-white">first</h1>
     </div>
     <!-- CARD 1 END -->
 
     <!-- CARD 2 START -->
 
-    <div class="card card-2 col-span-2">
+    <div class="card card-2 md:col-span-1 lg:row-span-2">
       <div class="flex flex-col items-center"></div>
       <div class="gradient-circle"></div>
       <div class="h-full text-white text-l flex flex-col">
-        <h1>Skills</h1>
-        <h2></h2>
+        <h1>second</h1>
       </div>
     </div>
 
     <!-- CARD 2 END -->
-
-    <!-- CARD 3 START -->
-
-    <div class="card col-span-1 flex flex-col justify-center items-center">
-      <h1 class="text-gradient">Timezone</h1>
-      <h1 class="text-5xl text-gradient" id="bucharest-time">Loading..</h1>
-    </div>
-
-    <!-- CARD 3 END -->
-
-    <!-- CARD 4 START -->
-
-    <div class="card col-span-1 flex flex-col justify-center items-center">
-      <h1 class="ml-2 text-xl text-gradient">Social Media</h1>
-      <!-- Social Media -->
-      <div class="ml-2 flex">
-        <a
-          href="https://www.linkedin.com/in/matias-poblete-7607351b8/"
-          target="_blank"
-          ><img
-            src="../../public/img/linkedin.svg"
-            class="h-12 w-12 ml-3 cursor-pointer"
-            alt=""
-          />
-        </a>
-        <a href="https://github.com/Matiaaspoblete" target="_blank"
-          ><img
-            src="../../public/img/github.svg"
-            class="h-12 w-12 ml-3 cursor-pointer"
-            alt=""
-          />
-        </a>
-      </div>
-    </div>
-
-    <!-- CARD 4 END -->
-
-    <!-- CARD 5 START -->
-
-    <div
-      class="card video col-span-2 flex flex-col items-center justify-center"
-    >
-      <video src="../../public/video/chess.mp4" autoplay muted loop id="bishop"
-      ></video>
-      <h1
-        class="text-2xl font-regular bg-gradient-to-r from-purple-600 via-fuchsia-500 to-fuchsia-400 bg-clip-text text-transparent"
-      >
-        Tech Enthusiast and Chess Fan
-      </h1>
-    </div>
-
-    <!-- CARD 5 END -->
-
-    <!-- CARD 6 START -->
-
-    <div class="card flex justify-center items-center">
-      <h2
-        class="ml-2 text-2xl font-medium bg-gradient-to-r from-fuchsia-400 via-fuchsia-400 to-purple-400 bg-clip-text text-transparent"
-      >
-        Download
-      </h2>
-      <h1
-        class="ml-2 text-5xl bg-gradient-to-r from-fuchsia-400 via-fuchsia-400 to-purple-400 bg-clip-text text-transparent"
-      >
-        CV
-      </h1>
-      <a href="../../public/cv.pdf" download>
-        <img
-          src="../../public/img/download.svg"
-          class="h-10 w-10 ml-3 cursor-pointer"
-        /></a
-      >
-    </div>
-
-    <!-- CARD 6 END -->
-
-    <!-- CARD 7 START -->
-
-    <div class="card col-span-3">
-      <div class="h-full flex flex-row items-center justify-center">
-        <h1
-          class="text-4xl bg-gradient-to-r from-fuchsia-400 via-fuchsia-400 to-purple-400 bg-clip-text text-transparent"
-        >
-          Check my projects
-        </h1>
-      </div>
-    </div>
   </div>
-  <!-- CARD 7 END -->
 </div>

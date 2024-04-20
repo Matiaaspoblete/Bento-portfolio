@@ -2,12 +2,14 @@
 import "./style.css";
 ---
 
-<div class="h-screen w-9/12 mx-auto">
+<div class="lg:h-screen w-9/12 mx-auto">
   <div
     class="pt-4 pb-4 justify-center h-full grid grid-cols-1 lg:grid-cols-4 gap-3 rounded"
   >
     <!-- CARD 1 START -->
-    <div class="card-1 card sm:row-span-4 lg:row-span-2 lg:col-span-1">
+    <div
+      class="card-1 card sm:row-span-2 h-80 lg:h-auto lg:row-span-2 lg:col-span-1"
+    >
       <div class="gradient-circle-1"></div>
       <h1 class="text-white text-regular text-s">Welcome!</h1>
       <div class="sm:flex sm:flex-col sm:items-start">
@@ -29,7 +31,7 @@ import "./style.css";
 
     <!-- CARD 2 START -->
 
-    <div class="card card-2 lg:col-span-2">
+    <div class="card card-2 h-80 lg:h-auto lg:col-span-2">
       <div class="gradient-circle"></div>
       <h1 class="text-white font-bold text-l">Technology Stack</h1>
       <h2 class="text-white font-medium text-l">
@@ -75,7 +77,7 @@ import "./style.css";
     <!-- CARD 3 START -->
 
     <div
-      class="card sm:col-span-2 lg:col-span-1 flex flex-col justify-center items-center"
+      class="card sm:col-span-2 lg:h-auto h-48 lg:col-span-1 flex flex-col justify-center items-center"
     >
       <h1 class="text-gradient">Timezone</h1>
       <h1 class="text-5xl text-gradient" id="bucharest-time">Loading..</h1>
@@ -86,7 +88,7 @@ import "./style.css";
     <!-- CARD 4 START -->
 
     <div
-      class="card sm:col-span-2 lg:col-span-1 flex flex-col justify-center items-center"
+      class="card sm:col-span-2 h-48 lg:h-auto lg:col-span-1 flex flex-col justify-center items-center"
     >
       <h1 class="ml-2 text-xl text-gradient">Social Media</h1>
       <!-- Social Media -->
@@ -115,7 +117,7 @@ import "./style.css";
     <!-- CARD 5 START -->
 
     <div
-      class="card video sm:col-span-2 lg:col-span-2 flex flex-col items-center justify-center"
+      class="card video sm:col-span-2 h-52 lg:h-auto lg:col-span-2 flex flex-col items-center justify-center"
     >
       <video
         src="/Bento-portfolio/video/chess.mp4"
@@ -135,7 +137,7 @@ import "./style.css";
     <!-- CARD 6 START -->
 
     <div
-      class="card sm:col-span-2 lg:col-span-1 flex justify-center items-center"
+      class="card sm:col-span-2 h-48 lg:h-auto lg:col-span-1 flex justify-center items-center"
     >
       <h2
         class="ml-2 text-2xl font-medium bg-gradient-to-r from-fuchsia-400 via-fuchsia-400 to-purple-400 bg-clip-text text-transparent"
@@ -159,10 +161,12 @@ import "./style.css";
 
     <!-- CARD 7 START -->
 
-    <div class="card sm:col-span-2 lg:col-span-3 overflow-hidden">
+    <div
+      class="card sm:col-span-2 sm:h-52 lg:h-auto lg:col-span-3 overflow-hidden"
+    >
       <div class="h-full flex flex-col items-center justify-center">
         <img src="/Bento-portfolio/img/bg.webp" id="bg-project" alt="" />
-        <h1 class="text-4xl bg-gradient-to-r mb-4 text-gradient">
+        <h1 class="text-2xl lg:text-4xl bg-gradient-to-r mb-4 text-gradient">
           Check my projects
         </h1>
         <img
