@@ -2,27 +2,62 @@
 import "./style.css";
 ---
 
-<div class="h-screen w-9/12 mx-auto">
-  <h1 class="text-white text-2xl text-center">Projects</h1>
+<div class="h-screen w-9/12 mx-auto" id="card1">
   <div
-    class="pt-4 pb-4 justify-center grid h-full md:grid-cols-1 lg:grid-cols-2 gap-3 rounded"
+    class="pt-4 pb-4 justify-center grid h-full grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-3 rounded"
   >
     <!-- CARD 1 START -->
-    <div class="card-1 card md:col-span-1 lg:col-span-2">
+    <div class="card-1 card w-full sm:col-span-1 md:col-span-1 lg:col-span-1">
       <h1 class="text-white">first</h1>
+      <img
+        src="/Bento-portfolio/img/winery.jpeg"
+        class="portfolio-card"
+        alt=""
+      />
     </div>
     <!-- CARD 1 END -->
 
     <!-- CARD 2 START -->
 
-    <div class="card card-2 md:col-span-1 lg:row-span-2">
+    <div class="card card-2 h-full sm:col-span-1 md:col-span-1 lg:col-span-1">
       <div class="flex flex-col items-center"></div>
-      <div class="gradient-circle"></div>
       <div class="h-full text-white text-l flex flex-col">
         <h1>second</h1>
+        <img
+          src="/Bento-portfolio/img/image1.png"
+          class="portfolio-card"
+          alt=""
+        />
       </div>
     </div>
 
     <!-- CARD 2 END -->
+
+    <!-- CARD 3 START -->
+    <div class="card-1 h-full card sm:col-span-1 md:col-span-1 lg:col-span-1">
+      <h1 class="text-white">third</h1>
+      <img
+        src="/Bento-portfolio/img/winery.jpeg"
+        class="portfolio-card"
+        alt=""
+      />
+    </div>
+    <!-- CARD 3 END -->
+
+    <!-- CARD 4 START -->
+
+    <div class="card card-2 h-full sm:col-span-1 md:col-span-1 lg:col-span-1">
+      <div class="flex flex-col items-center"></div>
+      <div class="h-full text-white text-l flex flex-col">
+        <h1>fourth</h1>
+        <img
+          src="/Bento-portfolio/img/image1.png"
+          class="portfolio-card"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- CARD 4 END -->
   </div>
 </div>

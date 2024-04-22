@@ -21,6 +21,12 @@ const { title } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -32,7 +38,11 @@ const { title } = Astro.props;
   html {
     font-family: "Montserrat", sans-serif;
     --tw-bg-opacity: 1;
-    background: radial-gradient(#030001, #490231);
+    background: radial-gradient(
+      circle at 24.1% 68.8%,
+      rgb(50, 50, 50) 0%,
+      rgb(0, 0, 0) 99.4%
+    );
   }
 
   body {
@@ -53,6 +63,14 @@ const { title } = Astro.props;
     font-weight: 500;
     font-size: medium;
   }
+
+  .projects {
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #9e2576;
+  }
+
   code {
     font-family:
       Menlo,
