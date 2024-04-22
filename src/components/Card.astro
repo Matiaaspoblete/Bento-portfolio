@@ -4,11 +4,11 @@ import "./style.css";
 
 <div class="lg:h-screen w-9/12 mx-auto">
   <div
-    class="pt-4 pb-4 justify-center h-full grid grid-cols-1 lg:grid-cols-4 gap-3 rounded"
+    class="pt-4 pb-4 justify-center h-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-3 rounded"
   >
     <!-- CARD 1 START -->
     <div
-      class="card-1 card sm:row-span-2 h-80 lg:h-auto lg:row-span-2 lg:col-span-1"
+      class="card-1 card h-80 md:w-full md:col-span-2 lg:h-auto lg:row-span-2 lg:col-span-1"
     >
       <div class="gradient-circle-1"></div>
       <h1 class="text-white text-regular text-s">Welcome!</h1>
@@ -22,7 +22,7 @@ import "./style.css";
         <br />
         <img
           src="/Bento-portfolio/img/avatar1.png"
-          class="h-32 lg:h-3/6 md:h-12 m-auto absolute bottom-0 left-0 right-0 sm:ml-auto"
+          class="h-32 lg:h-3/6 md:h-1/2 m-auto absolute bottom-0 left-0 right-0 sm:ml-auto"
           alt=""
         />
       </div>
@@ -31,7 +31,7 @@ import "./style.css";
 
     <!-- CARD 2 START -->
 
-    <div class="card card-2 h-80 lg:h-auto lg:col-span-2">
+    <div class="card card-2 h-80 md:h-auto lg:h-auto lg:col-span-2">
       <div class="gradient-circle"></div>
       <h1 class="text-white font-bold text-l">Technology Stack</h1>
       <h2 class="text-white font-medium text-l">
@@ -169,11 +169,13 @@ import "./style.css";
         <h1 class="text-2xl lg:text-4xl bg-gradient-to-r mb-4 text-gradient">
           Check my projects
         </h1>
-        <img
-          src="/Bento-portfolio/img/arrow.svg"
-          class="arrow h-8 animate-bounce cursor-pointer"
-          alt=""
-        />
+        <a href="#card1">
+          <img
+            src="/Bento-portfolio/img/arrow.svg"
+            class="arrow h-8 animate-bounce cursor-pointer"
+            alt=""
+          />
+        </a>
       </div>
     </div>
   </div>
